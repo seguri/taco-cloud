@@ -11,7 +11,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: Run maven script
-      uses: xlui/action-maven-cli/jdk11@master
+      uses: xlui/action-maven-cli@v1.1
       id: test
       with:
         lifecycle: 'clean package test'
