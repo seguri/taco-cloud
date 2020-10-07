@@ -12,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.htmlunit.webdriver.MockMvcHtmlUnitDriverBuilder;
 import org.springframework.web.context.WebApplicationContext;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -152,6 +153,9 @@ public class DesignAndOrderTacosBrowserTest {
         fillField("input#ccExpiration", "10/19");
         fillField("input#ccCVV", "123");
         browser.findElementByCssSelector("form").submit();
+
+        int[] a = new int[8];
+        int sum = Arrays.stream(a).sum();
     }
 
     private void submitEmptyOrderForm() {
