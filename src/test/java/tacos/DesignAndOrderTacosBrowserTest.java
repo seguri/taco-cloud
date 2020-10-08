@@ -153,9 +153,6 @@ public class DesignAndOrderTacosBrowserTest {
         fillField("input#ccExpiration", "10/19");
         fillField("input#ccCVV", "123");
         browser.findElementByCssSelector("form").submit();
-
-        int[] a = new int[8];
-        int sum = Arrays.stream(a).sum();
     }
 
     private void submitEmptyOrderForm() {
