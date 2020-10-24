@@ -8,7 +8,7 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>sia</groupId>
+	<groupId>name.seguri.spring-in-action</groupId>
 	<artifactId>taco-cloud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>taco-cloud</name>
